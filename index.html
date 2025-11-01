@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SavePlate | Fighting Food Waste, One Plate at a Time</title>
+    <title>SavePlate | Intelligent Food Waste Elimination</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -12,190 +12,277 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa; /* Light grey background */
+            background-color: #ffffff; 
         }
-        /* Green Gradient for Sustainability Theme */
-        .gradient-bg {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%); /* Emerald to Dark Emerald */
+
+        /* NEW THEME COLORS: Indigo Primary */
+        .text-primary { color: #4f46e5; /* Indigo 600 */ }
+        .bg-primary { background-color: #4f46e5; }
+        .bg-primary-hover:hover { background-color: #4338ca; }
+        .shadow-custom { box-shadow: 0 10px 30px rgba(79, 70, 229, 0.4); }
+        
+        /* Static Hero Background */
+        .bg-hero {
+            /* Placeholder: Replace with a high-res image showing food analytics or a modern kitchen */
+            background-image: url('https://placehold.co/1920x800/2a2491/ffffff?text=AI+Powered+Waste+Analytics');
+            background-size: cover;
+            background-position: center;
+            position: relative;
         }
-        .text-accent {
-            color: #10b981; /* Emerald 500 */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(30, 0, 70, 0.6); /* Deep Violet/Indigo Overlay */
         }
-        .bg-accent {
-            background-color: #10b981;
+
+        /* Custom CSS for a clean horizontal scrollbar */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
         }
-        .shadow-custom {
-            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.25); /* Green shadow */
-        }
-        /* Custom SVG Icon Styles */
-        .icon-lg {
-            width: 32px;
-            height: 32px;
-            stroke-width: 2.5;
+        .hide-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
     </style>
 </head>
-<body class="antialiased text-gray-800">
+<body class="antialiased text-gray-900">
 
     <div id="app" class="min-h-screen flex flex-col">
 
         <!-- Header/Navigation -->
-        <header class="p-4 bg-white shadow-md">
+        <header class="p-4 bg-white shadow-lg sticky top-0 z-50">
             <div class="container mx-auto flex justify-between items-center max-w-7xl">
-                <div class="text-2xl font-extrabold text-accent">SavePlate</div>
+                <div class="text-3xl font-extrabold text-primary tracking-tight">SavePlate</div>
                 <nav>
-                    <a href="#features" class="text-gray-600 hover:text-accent transition duration-150 mx-2 sm:mx-4 hidden sm:inline-block">Features</a>
-                    <a href="#team" class="text-gray-600 hover:text-accent transition duration-150 mx-2 sm:mx-4 hidden sm:inline-block">Team</a>
-                    <a href="#contact" class="px-4 py-2 bg-accent text-white rounded-full text-sm hover:bg-[#059669] transition duration-200 shadow-lg">Get Started Today</a>
+                    <a href="#features" class="text-gray-600 hover:text-primary transition duration-150 mx-4 hidden sm:inline-block font-medium">Features</a>
+                    <a href="#team" class="text-gray-600 hover:text-primary transition duration-150 mx-4 hidden sm:inline-block font-medium">Team</a>
+                    <!-- UPDATED: Request Demo links directly to mailto -->
+                    <a href="mailto:adhi23248@gmail.com?subject=Inquiry%20about%20SavePlate%20Solution" class="px-5 py-2 bg-primary text-white rounded-full text-base font-semibold bg-primary-hover transition duration-200 shadow-lg">Request Demo</a>
                 </nav>
             </div>
         </header>
 
-        <!-- 1. Hero Section (Unique Value Proposition Upfront) -->
-        <main class="flex-grow">
-            <section class="gradient-bg text-white py-20 sm:py-32">
-                <div class="container mx-auto px-4 text-center max-w-7xl">
-                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4">
-                        Stop Waste. Start <span class="block sm:inline-block">Saving.</span>
-                    </h1>
-                    <p class="text-xl sm:text-2xl font-light mb-8 max-w-3xl mx-auto">
-                        **SavePlate** is the smart, simple solution to **eliminate food waste** in commercial kitchens and homes.
-                        Reduce costs, boost sustainability, and measure your impact in real-time.
-                    </p>
-                    <!-- Clear Calls to Action -->
-                    <div class="space-x-4">
-                        <a href="#contact" class="inline-block px-8 py-4 bg-white text-accent font-bold text-lg rounded-full shadow-custom hover:bg-gray-100 transition duration-300 transform hover:scale-105">
-                            Request a Demo →
-                        </a>
-                        <a href="#features" class="inline-block px-8 py-4 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-accent transition duration-300 transform hover:scale-105">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 2. Engaging/Visual Section (Placeholder for video/infographic) -->
-            <section class="py-16 sm:py-24 bg-white">
-                <div class="container mx-auto px-4 max-w-7xl text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
-                        See How Much You Can Save
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
-                        A quick 60-second animated video or infographic typically goes here, but for now, imagine this space visualizing our impact!
-                    </p>
-                    
-                    <!-- Visual Placeholder -->
-                    <div class="w-full max-w-4xl mx-auto h-64 bg-gray-100 flex items-center justify-center rounded-2xl border-4 border-dashed border-gray-300 p-8">
-                        <div class="text-center text-gray-500">
-                             <!-- Using a relevant Lucide icon as the main visual element -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-3 text-accent"><path d="M7 22v-6"/><path d="M12 22v-4"/><path d="M17 22v-2"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M7 4v12"/><path d="M12 4v4"/><path d="M17 4v2"/></svg>
-                            <p class="font-semibold">Placeholder for Explainer Video or Interactive Infographic</p>
-                            <p class="text-sm">Highlighting $ savings and CO2 reduction.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 3. Key Features/Benefits Section -->
-            <section id="features" class="py-16 sm:py-24 bg-gray-100">
-                <div class="container mx-auto px-4 max-w-7xl">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
-                        Features Designed for Maximum Impact
-                    </h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                        <!-- Feature 1: Cost Savings -->
-                        <div class="p-6 bg-white rounded-xl shadow-lg transition duration-300 border-t-4 border-accent">
-                            <div class="text-accent mb-4">
-                                <svg class="icon-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Instant Cost Reduction</h3>
-                            <p class="text-gray-600">Identify waste hotspots instantly to save on inventory, ordering, and disposal fees from day one.</p>
-                        </div>
-
-                        <!-- Feature 2: Environmental Impact -->
-                        <div class="p-6 bg-white rounded-xl shadow-lg transition duration-300 border-t-4 border-accent">
-                            <div class="text-accent mb-4">
-                                <svg class="icon-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M7 12c.7-.6 1.7-1 3-1 2.8 0 5 2.2 5 5 0 1.3-.4 2.3-1 3"/></svg>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Sustainable Operations</h3>
-                            <p class="text-gray-600">Drastically lower your carbon footprint and achieve your corporate social responsibility goals with real metrics.</p>
-                        </div>
-
-                        <!-- Feature 3: Easy Integration -->
-                        <div class="p-6 bg-white rounded-xl shadow-lg transition duration-300 border-t-4 border-accent">
-                            <div class="text-accent mb-4">
-                                <svg class="icon-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M14 8h-4"/><path d="M14 12h-4"/><path d="M14 16h-4"/></svg>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Simple Monitoring</h3>
-                            <p class="text-gray-600">Our intuitive dashboard tracks waste by ingredient, station, and shift, making compliance and analysis easy.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <!-- 1. Hero Section with Static Background Image -->
+        <section class="relative h-[600px] sm:h-[80vh] flex items-center justify-center text-center bg-hero">
             
-            <!-- 4. Team Section -->
-            <section id="team" class="py-16 sm:py-24 bg-white">
-                <div class="container mx-auto px-4 max-w-7xl">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
-                        Meet the Founders
-                    </h2>
-                    <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
-                        
-                        <!-- Member 1 -->
-                        <div class="p-6 bg-gray-50 rounded-xl shadow-md">
-                            <div class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl text-white font-bold">R</div>
-                            <h3 class="text-xl font-semibold mb-1 text-gray-900">S Renu</h3>
-                            <p class="text-accent font-medium">Founder</p>
-                        </div>
-                        
-                        <!-- Member 2 -->
-                        <div class="p-6 bg-gray-50 rounded-xl shadow-md">
-                            <div class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl text-white font-bold">D</div>
-                            <h3 class="text-xl font-semibold mb-1 text-gray-900">B Dheeraj</h3>
-                            <p class="text-accent font-medium">Co-Founder</p>
-                        </div>
+            <div class="hero-overlay"></div>
 
-                        <!-- Member 3 -->
-                        <div class="p-6 bg-gray-50 rounded-xl shadow-md">
-                            <div class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl text-white font-bold">V</div>
-                            <h3 class="text-xl font-semibold mb-1 text-gray-900">T Venkata Karthik</h3>
-                            <p class="text-accent font-medium">Co-Founder</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- 5. Final CTA & Contact Information -->
-            <section id="contact" class="py-16 gradient-bg text-white">
-                <div class="container mx-auto px-4 text-center max-w-5xl">
-                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to Change Your Waste Line into a Profit Line?</h2>
-                    <p class="text-xl font-light mb-8">Contact our team today to schedule your personalized demo and start your journey to zero waste.</p>
-                    
-                    <!-- Clear Call to Action -->
-                    <a href="mailto:adhi23248@gmail.com" class="inline-block px-10 py-4 bg-white text-accent font-bold text-xl rounded-full shadow-custom hover:bg-gray-100 transition duration-300 transform hover:scale-105">
-                        Email Us for a Demo
+            <!-- Hero Content -->
+            <div class="relative z-10 container mx-auto px-4 max-w-7xl text-white">
+                <h1 class="text-5xl sm:text-7xl font-extrabold leading-tight mb-4 tracking-tight">
+                    <span class="block">Intelligence Against Waste.</span>
+                    Maximum Profit.
+                </h1>
+                <p class="text-xl sm:text-2xl font-light mb-10 max-w-4xl mx-auto">
+                    **SavePlate** delivers real-time waste analytics and predictive modeling to eliminate food loss, turning sustainability into a competitive advantage.
+                </p>
+                <!-- UPDATED: Book a Live Demo links directly to mailto -->
+                <div class="space-x-4">
+                    <a href="mailto:adhi23248@gmail.com?subject=Inquiry%20about%20SavePlate%20Solution" class="inline-block px-10 py-4 bg-white text-primary font-extrabold text-xl rounded-full shadow-custom hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                        Book a Live Demo →
                     </a>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Contact Information -->
-                    <div class="mt-8 pt-4 border-t border-white border-opacity-30">
-                        <p class="text-lg font-semibold">General Inquiries:</p>
-                        <a href="mailto:adhi23248@gmail.com" class="text-white hover:text-gray-200 transition duration-150 underline">adhi23248@gmail.com</a>
+        <!-- NEW 2. Horizontal Image Gallery Section -->
+        <section class="py-12 bg-gray-900">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="text-3xl font-bold text-white mb-6">Our Solution in Action</h2>
+                
+                <!-- Horizontal Scroll Container -->
+                <div class="flex overflow-x-scroll pb-10 hide-scrollbar space-x-6">
+                    
+                    <!-- Image 1: Restaurant Kitchen/Tracking -->
+                    <img class="w-80 h-60 rounded-xl shadow-2xl object-cover flex-shrink-0 transition duration-300 hover:scale-[1.02]" 
+                        src="https://placehold.co/600x400/1e293b/ffffff?text=Modern+Kitchen+Tracking" 
+                        alt="Restaurant kitchen tracking system">
+                    
+                    <!-- Image 2: Data Dashboard -->
+                    <img class="w-80 h-60 rounded-xl shadow-2xl object-cover flex-shrink-0 transition duration-300 hover:scale-[1.02]" 
+                        src="https://placehold.co/600x400/4f46e5/ffffff?text=Waste+Tracking+Dashboard" 
+                        alt="Data dashboard displaying analytics">
+                    
+                    <!-- Image 3: Sustainable Food Prep -->
+                    <img class="w-80 h-60 rounded-xl shadow-2xl object-cover flex-shrink-0 transition duration-300 hover:scale-[1.02]" 
+                        src="https://placehold.co/600x400/059669/ffffff?text=Sustainable+Food+Prep" 
+                        alt="Chef preparing sustainable food">
+                    
+                    <!-- Image 4: AI Analysis Screen -->
+                    <img class="w-80 h-60 rounded-xl shadow-2xl object-cover flex-shrink-0 transition duration-300 hover:scale-[1.02]" 
+                        src="https://placehold.co/600x400/f59e0b/ffffff?text=AI+Analysis+Screen" 
+                        alt="AI working on analysis screen">
+                    
+                    <!-- Image 5: Inventory Management -->
+                    <img class="w-80 h-60 rounded-xl shadow-2xl object-cover flex-shrink-0 transition duration-300 hover:scale-[1.02]" 
+                        src="https://placehold.co/600x400/ef4444/ffffff?text=Inventory+Management" 
+                        alt="Digital inventory management system">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Impact Section with Images -->
+        <section class="py-16 sm:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-7xl text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
+                    The True Cost of Food Waste
+                </h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                    We track what others miss. See the immediate return on investment by fixing inefficiencies.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Metric 1: Cost Savings (Image Placeholder) -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-b-4 border-primary">
+                        <img 
+                            src="https://placehold.co/150x150/f0f9ff/4f46e5?text=SAVINGS" 
+                            alt="Money savings chart" 
+                            class="w-24 h-24 mx-auto mb-4 rounded-full object-cover border-4 border-indigo-100"
+                        >
+                        <p class="text-4xl font-extrabold text-gray-900">25%+</p>
+                        <h3 class="text-xl font-semibold mt-2">Reduction in Ingredient Costs</h3>
+                    </div>
+
+                    <!-- Metric 2: Environmental Impact (Image Placeholder) -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-b-4 border-primary">
+                         <img 
+                            src="https://placehold.co/150x150/ecfdf5/059669?text=SUSTAINABILITY" 
+                            alt="Saving the environment" 
+                            class="w-24 h-24 mx-auto mb-4 rounded-full object-cover border-4 border-emerald-100"
+                        >
+                        <p class="text-4xl font-extrabold text-gray-900">1.5T+</p>
+                        <h3 class="text-xl font-semibold mt-2">Tonnes of CO2 Saved Annually</h3>
+                    </div>
+
+                    <!-- Metric 3: Efficiency (Image Placeholder) -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-b-4 border-primary">
+                         <img 
+                            src="https://placehold.co/150x150/fff7ed/ea580c?text=EFFICIENCY" 
+                            alt="Clock or efficiency gear" 
+                            class="w-24 h-24 mx-auto mb-4 rounded-full object-cover border-4 border-orange-100"
+                        >
+                        <p class="text-4xl font-extrabold text-gray-900">99.8%</p>
+                        <h3 class="text-xl font-semibold mt-2">Data Accuracy and Reporting</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Key Features/Benefits Section (Updated with Images) -->
+        <section id="features" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                    How SavePlate Works: Precision Waste Tracking
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Feature 1: Predictive Analytics (Image Placeholder) -->
+                    <div class="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-indigo-50/50 hover:bg-indigo-100 transition duration-200">
+                         <img 
+                            src="https://placehold.co/100x100/4f46e5/ffffff?text=AI+PREDICT" 
+                            alt="AI analysis dashboard" 
+                            class="w-24 h-24 rounded-lg shadow-md object-cover"
+                        >
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-gray-900">Predictive Ordering</h3>
+                            <p class="text-gray-600">Our AI forecasts demand fluctuations and potential waste points, automatically adjusting ordering recommendations to prevent overstocking.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2: Real-time Dashboards (Image Placeholder) -->
+                    <div class="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-indigo-50/50 hover:bg-indigo-100 transition duration-200">
+                         <img 
+                            src="https://placehold.co/100x100/10b981/ffffff?text=DASHBOARD" 
+                            alt="Analytics screen" 
+                            class="w-24 h-24 rounded-lg shadow-md object-cover"
+                        >
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-gray-900">Actionable Analytics</h3>
+                            <p class="text-gray-600">A clean, modern dashboard gives staff and management visibility into waste streams by ingredient, station, and time of day.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3: Inventory Integration (Image Placeholder) -->
+                    <div class="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-indigo-50/50 hover:bg-indigo-100 transition duration-200">
+                         <img 
+                            src="https://placehold.co/100x100/f59e0b/ffffff?text=INTEGRATION" 
+                            alt="POS system connection" 
+                            class="w-24 h-24 rounded-lg shadow-md object-cover"
+                        >
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-gray-900">Seamless Integration</h3>
+                            <p class="text-gray-600">Connects with existing POS and inventory systems to centralize all purchasing, usage, and waste data in one place.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+        
+        <!-- 5. Team Section (Updated to Indigo) -->
+        <section id="team" class="py-16 sm:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                    Our Leadership Team
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+                    
+                    <!-- Member 1: Founder -->
+                    <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-primary">
+                        <div class="w-24 h-24 bg-indigo-50 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl text-primary font-bold border-4 border-white shadow-md">SR</div>
+                        <h3 class="text-xl font-semibold mb-1 text-gray-900">S Renu</h3>
+                        <p class="text-primary font-medium">Founder & CEO</p>
+                    </div>
+                    
+                    <!-- Member 2: Co-Founder -->
+                    <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-primary">
+                        <div class="w-24 h-24 bg-indigo-50 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl text-primary font-bold border-4 border-white shadow-md">BD</div>
+                        <h3 class="text-xl font-semibold mb-1 text-gray-900">B Dheeraj</h3>
+                        <p class="text-primary font-medium">Co-Founder & CTO</p>
+                    </div>
+
+                    <!-- Member 3: Co-Founder -->
+                    <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-primary">
+                        <div class="w-24 h-24 bg-indigo-50 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl text-primary font-bold border-4 border-white shadow-md">TVK</div>
+                        <h3 class="text-xl font-semibold mb-1 text-gray-900">T Venkata Karthik</h3>
+                        <p class="text-primary font-medium">Co-Founder & COO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 6. Final CTA & Contact Information (Updated to Indigo) -->
+        <section id="contact" class="py-16 bg-primary text-white">
+            <div class="container mx-auto px-4 text-center max-w-5xl">
+                <h2 class="text-4xl font-extrabold mb-4">Ready to See Your Savings?</h2>
+                <p class="text-xl font-light mb-8">Schedule a 15-minute consultation to find out how much SavePlate can cut from your operational costs.</p>
+                
+                <!-- UPDATED: Contact Us Today links directly to mailto with subject -->
+                <a href="mailto:adhi23248@gmail.com?subject=Inquiry%20about%20SavePlate%20Solution" class="inline-block px-10 py-4 bg-white text-primary font-bold text-xl rounded-full shadow-custom hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    Contact Us Today
+                </a>
+
+                <!-- Contact Information -->
+                <div class="mt-8 pt-4 border-t border-white border-opacity-30">
+                    <p class="text-lg font-semibold">Contact Email:</p>
+                    <a href="mailto:adhi23248@gmail.com" class="text-white hover:text-gray-200 transition duration-150 font-medium underline">adhi23248@gmail.com</a>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer -->
-        <footer class="p-6 bg-gray-800 text-white text-center">
+        <footer class="p-6 bg-gray-900 text-white text-center">
             <div class="container mx-auto max-w-7xl">
                 <p class="text-sm">
-                    &copy; 2025 SavePlate. All rights reserved. | <a href="#" class="text-accent hover:text-white">Terms of Service</a>
+                    &copy; 2025 SavePlate. All rights reserved. | Intelligence Against Waste.
                 </p>
-                <div class="mt-2 text-xs text-gray-400">
-                    <p>Founders: S Renu, B Dheeraj, T Venkata Karthik</p>
-                    <p>Contact: adhi23248@gmail.com</p>
-                </div>
+                <p class="mt-2 text-xs text-gray-400">
+                    Founders: S Renu, B Dheeraj, T Venkata Karthik
+                </p>
             </div>
         </footer>
 
